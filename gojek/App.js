@@ -119,6 +119,27 @@ export default function App() {
 
           </View>
         </View>
+        {/* profile connection */}
+        <View style={{padding: 16, paddingBottom: 0}}>
+          <View style={{height: 15, width: 60, marginLeft: -4}}>
+            <Image source={require('./assets/logo/gojek.png')} style={{width: undefined, height: undefined, resizeMode: 'contain', flex: 1}} />
+          </View>
+          <Text style={{fontSize: 17, fontWeight: 'bold', color: '#1C1C1C', marginTop: 15, marginBottom: 20}}>Complete your profile</Text>
+          <View style={{flexDirection: 'row'}}>
+            <View style={{marginRight: 16}}>
+              <Image source={require('./assets/dummy/facebook-connect.png')} />
+            </View>
+            <View style={{flex: 1}}>
+              <Text style={{fontSize: 15, fontWeight: 'bold', color: '#4A4A4A', marginBottom: 5}}>Connect with Facebook</Text>
+              <Text style={{width: '50%', fontSize: 15, fontWeight: 'normal', color: '#4A4A4A', marginBottom: 5}}>Login faster without verification code</Text>
+            </View>
+          </View>
+          <TouchableOpacity style={{backgroundColor: '#61A756', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'flex-end', borderRadius: 4}}>
+            <Text style={{fontWeight: 'bold', fontSize: 13, color: 'white'}}>CONNECT</Text>
+          </TouchableOpacity>
+          <View style={{paddingTop: 16, paddingHorizontal: 16, marginBottom: 16, paddingBottom: 16, borderBottomColor: '#E8E9ED', borderBottomWidth: 1}} ></View>
+
+        </View>
         {/* gofood banner  */}
         <View style={{paddingTop: 16, paddingHorizontal: 16, marginBottom: 16, paddingBottom: 16, borderBottomColor: '#E8E9ED', borderBottomWidth: 1}} >
           <View style={{position: 'relative'}}>
