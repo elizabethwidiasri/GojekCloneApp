@@ -125,12 +125,17 @@ export default function App() {
               </View> */}
 
             </View>
-            <View style={{paddingTop: 16, paddingBottom: 20, borderBottomColor: '#E8E9ED', borderBottomWidth: 1}}>
+            <View style={{paddingTop: 16, paddingBottom: 20, borderBottomColor: '#E8E9ED', borderBottomWidth: 1, flexDirection: 'row'}}>
+              <View style={{width: '85%'}}>
+
               <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1C1C1C', letterSpacing: 1, fontFamily: 'maison' }}>Be worry-free on Pay Day!</Text>
-              <Text style={{fontSize: 13, color: '#7A7A7A', marginBottom: 11, width: '70%', fontFamily: 'maison' }}>Because GoPay Pay Day is back with up to 60% CASHBACK in hundreds of participating merchants!</Text>
+              <Text style={{fontSize: 13, color: '#7A7A7A', marginBottom: 11, width: '80%', fontFamily: 'maison' }}>Because GoPay Pay Day is back with up to 60% CASHBACK in hundreds of participating merchants!</Text>
+              </View>
+              <View>
               <TouchableOpacity style={{backgroundColor: '#61A756', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'flex-end', borderRadius: 4}}>
                 <Text style={{fontWeight: 'bold', fontSize: 13, color: 'white'}}>I'M IN</Text>
               </TouchableOpacity>
+              </View>
 
             </View>
           </View>
@@ -233,8 +238,18 @@ export default function App() {
             <View style={{paddingHorizontal: 16, paddingBottom: 16, borderBottomColor: '#E8E9ED', borderBottomWidth: 1, marginBottom: 20, marginHorizontal: 16}} ></View>
 
           </View>
+           {/* topup gopay  */}
+
+          <View style={{paddingTop: 16, paddingHorizontal: 16, backgroundColor: 'white'}}>
+            <View style={{position: 'relative'}}>
+              <Image source={require('./assets/images/bannertopup.png')} style={{height: 170, width: '100%', borderRadius: 6}} />
+            </View>
+          </View>
+
           </ScrollView>
         </View>
+
+       
         
         {/* navigation bar */}
         <View style={{height: 54, flexDirection: 'row', backgroundColor: 'white'}}>
@@ -255,7 +270,7 @@ export default function App() {
             <Text style={{fontSize: 10, color: '#545454', fontFamily: 'maison', marginTop: 5}}>Inbox</Text>
           </View>
           <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-              <Image  style={{width: 26, height: 32}} source={require('./assets/images/account-non.png')} />
+              <Image  style={{width: 26, height: 32, marginTop: 0, marginBottom: -4}} source={require('./assets/images/account-non.png')} />
             <Text style={{fontSize: 10, color: '#545454', fontFamily: 'maison', marginTop: 5}}>Account</Text>
           </View>
         </View>
